@@ -25,7 +25,7 @@ class HelloRestController {
     Eine Übersicht über die verfügbaren Methoden:
     
     "method": "GET", "path": "/", "description": "Diese Übersicht"
-    "method": "GET", "path": "/hello", "description": "Hier kannst du dich mit deinem Namen begrüßen lassen. Gebe dafür deinen Namen als Parameter an."
+    "method": "GET", "path": "/hello", "description": "Hier kannst du dich mit deinem Namen begrüßen lassen. Gebe dafür deinen Namen als Parameter "name" an."
     "method": "GET", "path": "/puzzles", "description": "Eine Übersicht über die verfügbaren Rätsel"
 }"""
 
