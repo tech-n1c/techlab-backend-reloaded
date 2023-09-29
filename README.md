@@ -33,4 +33,6 @@ Damit das Backend für die Rätsel gestartet werden kann, muss Java auf dem Syst
 
 Enjoy!
 
+
+
 PS: Sorry für die schlechte Dokumentation im Code, das Ganze ist in minimaler Zeit entstanden...
