@@ -15,7 +15,7 @@ Die folgenden HTTP-Anfragen können an das Projekt gestellt werden:
 | GET | /puzzles/encrypting/3 | Liefert ein Verschlüsselungsrätsel mit einer Caesarverschiebung von 16.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | GET | /changeRoomNumber | Hier könnt ihr als Orga-Team die Raumnummer ändern, die als Lösung herauskommen soll. Hierfür kann z.B. ein Besprechungsraum gebucht und dort Süßigkeiten deponiert werden. Die Raumnummer muss bei jedem Start der Anwendung gesetzt werden und kann im laufenden Betrieb jederzeit abgeändert werden. Dafür muss die Raumnummer als Parameter "raumnummer" angegeben werden. Das Passwort muss als Parameter "passkey" mit `oq2gGEU2iesf6Wt5ACzzCu2ATN9fBmMbrGvQtn2oMy8dZLg8ag7xgzmw7LERrwvwShKRD` gesetzt werden. |
 
-## Beispielanwendung
+## Sinn des Rätsels
 
 Um das Rätsel zu lösen, müssen die Studis/Azubis alle drei Verschlüsselungsrätsel lösen. Die Lösungen sind:
 
@@ -26,6 +26,10 @@ Um das Rätsel zu lösen, müssen die Studis/Azubis alle drei Verschlüsselungsr
 Wenn der Benutzer alle drei Rätsel gelöst hat, erhält er die Antwort "Korrekt gelöst, begebt euch nun auf die Suche nach Raum " + Raumnummer".
 
 Die Raumnummer kann dann mit der `changeRoomNumber`-Methode (s. Tabelle) geändert werden.
+
+## Starten des Backends
+
+Damit das Backend für die Rätsel gestartet werden kann, muss Java auf dem System installiert sein (>=17). Dann kann das .jar-Archiv gestartet und die Raumnummer s. O. gestartet werden: `java -jar archiv-name.jar`
 
 **Weitere Informationen**
 
