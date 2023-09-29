@@ -29,4 +29,4 @@ Die Raumnummer kann dann mit der `changeRoomNumber`-Methode (s. Tabelle) geände
 
 **Weitere Informationen**
 
-Weitere Informationen zum Projekt finden ihr auf der [Projektseite](https://github.com/netzebw/techlabbackendreloaded).
+Weitere Informationen zum Projekt finden ihr auf der [Projektseite](https://github.com/tech-n1c/techlab-backend-reloaded).
