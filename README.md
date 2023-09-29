@@ -32,3 +32,5 @@ Die Raumnummer kann dann mit der `changeRoomNumber`-Methode (s. Tabelle) geände
 Damit das Backend für die Rätsel gestartet werden kann, muss Java auf dem System installiert sein (>=17). Dann kann das .jar-Archiv gestartet und die Raumnummer s. O. gestartet werden: `java -jar archiv-name.jar`
 
 Enjoy!
+
+PS: Sorry für die schlechte Dokumentation im Code, das Ganze ist in minimaler Zeit entstanden...
