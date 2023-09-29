@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class PuzzleRestController {
+
+    private var roomNumber: String = ""
+
+
     @GetMapping("/puzzles")
     fun overview(): String {
         val json = """Übersicht über alle verfügbaren Rätsel-Typen:<br><br>
@@ -59,11 +63,25 @@ class PuzzleRestController {
             }
         } else if (puzzle == 3) {
             if (solution.equals("Dies ist das dritte Rätsel.")) {
-                return "Korrekt gelöst, begebt euch nun auf die Suche nach Raum 3R1-237"
+                return "Korrekt gelöst, begebt euch nun auf die Suche nach Raum " + this.roomNumber + "!"
             } else {
                 return "Leider Falsch."
             }
         } else return "Bitte gebe eine gültige Rätsel-Nummer ein."
+
+    }
+
+    @GetMapping("/changeRoom")
+    fun changeRoomNumber(@RequestParam(value = "raumnummer")raumnummer: String, @RequestParam(value = "passkey")passkey: String): String {
+        if (raumnummer == null && passkey.equals("oq2gGEU2iesf6Wt5ACzzCu2ATN9fBmMbrGvQtn2oMy8dZLg8ag7xgzmw7LERrwvwShKRD")) {
+            return "Du Pfosten hast keine Raumnummer angegeben!"
+        } else if (raumnummer != null && passkey.equals("oq2gGEU2iesf6Wt5ACzzCu2ATN9fBmMbrGvQtn2oMy8dZLg8ag7xgzmw7LERrwvwShKRD")){
+            this.roomNumber = raumnummer
+            return "Die Raumnummer wurde gespeichert."
+        } else {
+            return "Du mUsSd aBeR sHcOn eIn PAßwoRd aNgEbEn BRuHdi :/"
+        }
+
 
     }
 }
